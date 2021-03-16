@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+body {
+    margin: 0 auto;
+    color: #3f464d;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+/* inner 클래스도 width가 100%지만 */
+/* 미디어쿼리를 통해서 width가 일정 값으로 고정이 된다. */
+/* 상위태그인 body, header모두 width 100%에 margin 0 auto이다. */
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.head-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.head-container .head-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.head-container .head-menu {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+    .inner {
+        max-width: 1000px;
+    }
+}
