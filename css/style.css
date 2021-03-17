@@ -3,6 +3,14 @@
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
+a {
+    all: unset;
+}
+a:link, a:visited, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: #3f464d;
+}
+
 body {
     margin: 0 auto;
     color: #3f464d;
@@ -39,6 +47,11 @@ header {
 .head-container .head-menu {
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.head-container .head-title a:hover, .head-container .head-menu a:hover {
+    cursor: pointer;
+    color: #2186c4;
 }
 
 @media only screen and (min-width: 1000px) {
