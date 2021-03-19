@@ -21,6 +21,7 @@ header {
     height: 60px;
     margin: 0 auto;
     position: fixed;
+    background-color:#fff;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -32,6 +33,7 @@ header {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    padding: 2rem;
 }
 .head-container {
     width: 100%;
@@ -54,6 +56,40 @@ header {
     color: #2186c4;
 }
 
+.main {
+    height: 380px;
+    background-color: #fff;
+    background-image: url(/img/photodune-4161018-group-of-students-m.jpg);
+    background-repeat:no-repeat;
+    background-position: center 10%;
+    z-index: 1;
+    margin-top:60px;
+    position: relative;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47,48,89);
+    opacity:80%;
+    z-index: 2;
+}
+
+.title-container {
+    margin-top: 5rem;
+}
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom:1rem;
+}
+.message {
+    font-size: 1.3rem;
+    color: #fff;
+    line-height:1.9rem;
+    margin-left: 0.2rem;
+}
 @media only screen and (min-width: 1000px) {
     .inner {
         max-width: 1000px;
