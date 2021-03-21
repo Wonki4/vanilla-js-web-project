@@ -26,6 +26,12 @@ header {
     top: 0;
     left: 0;
 }
+
+section {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
 /* inner 클래스도 width가 100%지만 */
 /* 미디어쿼리를 통해서 width가 일정 값으로 고정이 된다. */
 /* 상위태그인 body, header모두 width 100%에 margin 0 auto이다. */
@@ -33,7 +39,6 @@ header {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding: 2rem;
 }
 .head-container {
     width: 100%;
@@ -46,25 +51,23 @@ header {
     font-weight: bold;
     font-size: 1.2rem;
 }
-.head-container .head-menu {
+.head-container .head-blog {
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-.head-container .head-title a:hover, .head-container .head-menu a:hover {
+.head-container .head-title a:hover, .head-container .head-blog a:hover {
     cursor: pointer;
     color: #2186c4;
 }
 
 .main {
     height: 380px;
-    background-color: #fff;
     background-image: url(/img/photodune-4161018-group-of-students-m.jpg);
     background-repeat:no-repeat;
     background-position: center 10%;
     z-index: 1;
     margin-top:60px;
-    position: relative;
 }
 
 .main-container {
@@ -76,7 +79,7 @@ header {
 }
 
 .title-container {
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 .title {
     font-weight: bold;
@@ -89,6 +92,53 @@ header {
     color: #fff;
     line-height:1.9rem;
     margin-left: 0.2rem;
+}
+.skill-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.skill {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    box-shadow: 5px 5px 10px;
+    padding: 1rem 1.4rem;
+    margin-top: 2rem;
+    margin-right: 1.8rem;
+}
+.skill > .skill-icon {
+    font-size: 2rem;
+    margin-right: 1.2rem;
+}
+.skill > .skill-title {
+    display: flex;
+    flex-direction: column;
+}
+.skill-title > .main-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-title > .sub-title {
+    font-size: 0.7rem;
+}
+
+.javascript-color {
+    color:#f7df1e;
+}
+.backend-color {
+    color: #3f464d;
+}
+.algorithm-color {
+    color:#000;
+}
+.network-color {
+    color:#00bfff;
 }
 @media only screen and (min-width: 1000px) {
     .inner {
