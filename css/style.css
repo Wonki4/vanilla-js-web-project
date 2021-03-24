@@ -250,6 +250,34 @@ section {
     margin-top:5px;
     font-size: 0.8rem;
 }
+#backtotop {
+    background-color: rgb(47, 48, 89);
+    width: 40px;
+    height: 40px;
+    text-align:center;
+    border-radius:20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition-property: background-color, opacity, visibility;
+    transition-duration: 0.3s, 0.5s, 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+#backtotop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-size:1.5rem;
+    line-height:40px;
+    color:#fff;
+}
+#backtotop.show {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgb(47,48,49);
+}
 @media only screen and (min-width: 1000px) {
     .inner {
         max-width: 1000px;
